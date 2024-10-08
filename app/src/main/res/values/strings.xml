@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AlmacenarPreferencias</string>
+
+    <string name="textView_titulo">Almacenar Preferencias</string>
+    <string name="textView_nombre">Nombre</string>
+    <string name="textView_tema">Tema</string>
+    <string name="textView_fecha">Fecha</string>
+
+    <string name="radioButton_planta">Planta</string>
+    <string name="radioButton_animal">Animal</string>
+    <string name="radioButton_figura">Figura</string>
+
+    <string name="button_guardar">Guardar</string>
+    <string name="button_ver">Ver</string>
+
+</resources>
