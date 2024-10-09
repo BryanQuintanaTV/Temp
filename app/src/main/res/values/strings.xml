@@ -13,4 +13,8 @@
     <string name="button_guardar">Guardar</string>
     <string name="button_ver">Ver</string>
 
+    <!--  Actividad verDatos  -->
+    <string name="imageView_tema">Imagen del tema</string>
+    <string name="button_regresar">Regresar</string>
+
 </resources>

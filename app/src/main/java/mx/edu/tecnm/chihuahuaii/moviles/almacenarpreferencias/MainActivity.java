@@ -1,6 +1,7 @@
 package mx.edu.tecnm.chihuahuaii.moviles.almacenarpreferencias;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -90,5 +92,25 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
+        // Agregar escuchador de eventos en CalendarView y guardar fecha en formato personalizado.
+        calendarView_fecha.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
+            @Override
+            public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int dayOfMonth) {
+
+                selectedDate = dayOfMonth + "/" + (month + 1) + "/" + year;
+
+            }
+        });
+
+        // Escuchador de botón abrir "VerDatos".
+        button_ver.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent_verDatos = new Intent(MainActivity.this, verDatos.class);
+                startActivity(intent_verDatos);
+            }
+        });
+
+    } // Fin onCreate
 }
