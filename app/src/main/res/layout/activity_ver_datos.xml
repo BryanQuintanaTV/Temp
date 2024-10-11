@@ -59,6 +59,7 @@
             android:id="@+id/button_regresar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button_regresar" />
+            android:text="@string/button_regresar"
+            app:icon="@drawable/icon_goback" />
     </TableRow>
 </TableLayout>

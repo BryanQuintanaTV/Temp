@@ -21,6 +21,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 import org.jetbrains.annotations.TestOnly;
 
+import java.sql.Date;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText editText_nombre;
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 // Recuperar y Guardar la fecha
-                selectedDate = String.valueOf(calendarView_fecha.getDate());
+                // selectedDate = String.valueOf(calendarView_fecha.getDate());
                 editor.putString("fecha", selectedDate);
 
                 // Guardar cambios
